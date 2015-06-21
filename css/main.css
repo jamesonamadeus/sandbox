@@ -3,7 +3,7 @@ GENERAL
 ********************************************/
 
 header {
-    float: left;
+    float: center;
     margin: 0 0 30px 0;
     padding: 5px 0 0 0;
     width: 100%;
@@ -63,16 +63,6 @@ nav {
     margin: 20px 0 0;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-}
-
 nav a {
     font-weight: 800;
     padding: 15px 10px;
@@ -94,62 +84,6 @@ footer {
     width: 40px;
     height: 40px;
     margin: 0 5px;
-}
-
-/********************************************
-PAGE: WHAT
-********************************************/
-
-#gallery {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#gallery li {
-    position: relative;
-    float: left;
-    height: auto;
-    width: 45%;
-    margin: 2.5%;
-    background-color: #f5f5f5;
-    color: #bdc3c7;
-}
-
-#gallery li a p {
-    margin: 0;
-    padding: 5%;
-    font-size: 0.75em;
-    color: #bdc3c7;
-}
-
-
-/********************************************
-PAGE: CONTACT
-********************************************/
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
 }
 
 /********************************************
@@ -178,20 +112,6 @@ h1, h2 {
     color: #fff;
 }
 
-/* links */
-a {
-    color: #fe9601;
-}
-
-/* nav link*/
-nav a, nav a:visited {
-    color: #fff;
-}
-
-/* selected nav link*/
-nav a:active, nav a:hover {
-  color: purple;
-}
 
 
 

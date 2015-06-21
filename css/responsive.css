@@ -14,19 +14,9 @@ TWO COLUMN LAYOUT
     float: right;
   }
   
-/********************************************
-PAGE: WHAT
-********************************************/
-  
-  #gallery li {
-    width: 28.333333333%;
-}
-  #gallery li: nth-child(3n+1) {
-    clear: right;
-}
 
 /********************************************
-PAGE: WHAT
+PAGE: INEDX
 ********************************************/
   .profile-photo {
      float: left;
@@ -49,9 +39,9 @@ PAGE: HEADER
   }
   
   #logo {
-    float: left;
+    float: none;
     margin-left: 5%;
-    text-align: left;
+    text-align: none;
     width: 45%;
   }
   
