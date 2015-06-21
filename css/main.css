@@ -1,0 +1,214 @@
+/********************************************
+GENERAL
+********************************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+body{
+    font-family: 'Text Me One', sans-serif;
+    font-size: 1.2em;
+}
+    
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/********************************************
+HEADING
+********************************************/
+
+#logo {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Megrim', sans-serif;
+    margin: 15px 0;
+    font-size: 1.9em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+
+h2 {
+    font-family: 'Monofett', sans-serif;
+    margin: -5px 0;
+    font-weight: normal;
+}
+
+/********************************************
+NAVIGATION
+********************************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+
+/********************************************
+FOOTER
+********************************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+/********************************************
+PAGE: WHAT
+********************************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+}
+
+
+/********************************************
+PAGE: CONTACT
+********************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/********************************************
+COLORS
+********************************************/
+
+/* site body*/
+body    {
+    background-color: #fff;
+    color: #999;
+}
+
+/* green header*/
+header {
+    background: #29303c;
+    border-color: #4f5966;
+}
+
+/* nav background on mobile Header*/
+nav {
+    background: #4f5966;
+}
+
+/* logo text*/
+h1, h2 {
+    color: #fff;
+}
+
+/* links */
+a {
+    color: #fe9601;
+}
+
+/* nav link*/
+nav a, nav a:visited {
+    color: #fff;
+}
+
+/* selected nav link*/
+nav a:active, nav a:hover {
+  color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
