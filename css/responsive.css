@@ -5,18 +5,18 @@ TWO COLUMN LAYOUT
 ********************************************/
   
   #primary {
-    width: 50%;
+    width: 70%;
     float: left;
   }
   
   #secondary {
-    width: 40%;
+    width: 20%;
     float: right;
   }
   
 
 /********************************************
-PAGE: INEDX
+PAGE: INDEX
 ********************************************/
   .profile-photo {
      float: left;
