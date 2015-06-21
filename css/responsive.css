@@ -35,14 +35,14 @@ PAGE: HEADER
     font-size: 1.125em;
     margin-right: 5%;
     text-align: right;
-    width: 45%;
+    width: 55%;
   }
   
   #logo {
     float: none;
     margin-left: 5%;
     text-align: none;
-    width: 45%;
+    width: 55%;
   }
   
   h1 {
