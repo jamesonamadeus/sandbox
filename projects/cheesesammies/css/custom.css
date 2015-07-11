@@ -1,0 +1,17 @@
+ul.nav {
+	font-family: Patrick Hand, cursive;
+	font-size: 32px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.navbar-nav li a {
+  color: #FFFFFF;
+}
+
+.navbar-default {
+    background-color: #FF8330;
+    border-color: #FF8330;
+    color: #FFFFFF;
+}
+
