@@ -32,20 +32,20 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="70">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="images/top_logo.png" alt="One Million Lines"></br>
+          <a class="navbar-brand" href="#jumbotron"><img src="images/top_logo.png" alt="One Million Lines" title="One Million Lines"></a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#who">WHO WE ARE</a></li>
             <li><a href="#get-involved">GET INVOLVED</a></li>
@@ -55,12 +55,21 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
       <div class="container">
         <h1>Our goal is to inspire <br>Boston to write 1,000,000 <br> lines of code_</h1>
         <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>. Millions of lines of code are being written. In the capital of Boston, Massachusetts, the community is taking the challenge and our goal is to write 1,000,000 lines of code_.</p>
-        <p><a href="https://code.org/promote/ma" target="_blank" <a class="btn btn-danger btn-lg" href="#" role="button">Get Involved</a></p></a>
-        <img src="images/code.png" title="Code.org logo" alt="Code.org">
+        <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn More &raquo;</a></p>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FC5FbmsH4fw?showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+          <a href="http://www.code.org/" target="_blank"><img src="images/code.png" title="Code.org logo" alt="Code.org"></a>
       </div>
     </div>
 
@@ -85,7 +94,7 @@
             </span>
             <h3>Students</h3>
             <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved.</p>
-            <p><a class="btn btn-default" href="https://docs.google.com/forms/d/11E1X2vg4wtL5_WuQMMZm2uGpQfY_iA0qmFK0b5DcKD4/viewform?usp=send_form" target="_blank" role="button">Start Learning &raquo;</a></p>
+            <p><a class="btn btn-default" href="https://studio.code.org/" target="_blank" role="button">Start Learning &raquo;</a></p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
           <span class="fa-stack fa-4x">
@@ -120,14 +129,17 @@
           <div class="col-lg-4 col-md-4 col-sm-12">
            <p><img src="images/with_love_in_boston.png" alt="Made With Love Boston"</p>
           </div>
+        <div id="back-to-top">
+          <a href="#jumbotron"><i class="fa fa-4x fa-chevron-circle-up"></i></a>
+        </div>
       </footer>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
