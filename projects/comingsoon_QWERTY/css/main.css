@@ -1,0 +1,89 @@
+
+body {
+    /*margin-top: 50px;  Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Droid Serif', serif;
+    width: 100%;
+    height: 100%;
+    background: url(../img/typewriter_.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.navbar .container {
+	text-align: center;
+}
+
+div.content {
+	text-align: center;
+	margin-top: 300px;
+    position: relative;
+    color: #000;
+    font-weight: 600;
+    background-color: rgba(255,255,255,.6);
+}
+
+.pink {
+	color: #E86C8D;
+}
+
+
+/*email sign-up button*/
+
+
+.input {
+ 	width: 500px;
+ 	margin: 1% auto;
+  	display: flex;
+}
+
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+  
+#email {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+  width: 25%;
+  height: 46px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+  
+
+#submit:hover {
+  background: #d45d7d;
+}
+  
+
+input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
+
+/*Footer Image*/
+div#footer {
+	position: fixed;
+	bottom: 0px;
+	left: 10px;
+}
