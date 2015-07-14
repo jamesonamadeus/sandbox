@@ -141,64 +141,22 @@ li a.page.scroll a.hover {
    
 
 /*Portfolio*/
-.block1 {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-}
+.block1,
 
-.block2 {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-}
+.block2, 
+.block3,
 
-.block3 {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-}
-
-.block4 {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-}
-
-.block5 {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-}
-
+.block4,
+.block5,
 .block6 {
     margin: 10px 0 10px 0;
     background-position: 50% 50%;
-    background: url(http://placehold.it/600x300);
+    background: url(http://placehold.it/600x300) no-repeat center;
     height: 300px;
     width: 100%;
     display: block;
     text-align: 0 auto;
+    background-size: cover;
 }
 
 /*about*/
