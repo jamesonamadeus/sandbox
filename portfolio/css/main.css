@@ -1,236 +1,228 @@
-html,
+* {
+	transition: all 1s ease;
+}
+
+html, 
 body {
     width: 100%;
-    height: 100%;
+    overflow-x: hidden; 
+    background-color: #171717;
+    font-family: 'Source Sans Pro', sans-serif, arial;
+    font-weight: 600;
+
 }
 
-body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+#video-wrap video {
+	width: 100%;
+	background-size: cover
+	background-attachment: fixed
+	parallaxOptions.effect: 1
+	object-fill: cover;
 }
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+div #outer-wrap {
+	width: 100%;
+	height: 450px;
 }
 
-/* Custom Button Styles */
+/*Navbar Font-Size FullScreen 1920*/
+a.navbar-brand.page-scroll {
+	font-size: 28px;
+	color: #ee036a;
+    text-align: right;
+}
 
-.btn-dark {
+a.navbar-brand.page-scroll>a:hover {
+	color: #a6a6a6;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+div.container {
+	font-size: 22px;
+	width: 80%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  	color: #ee036a;
+    text-align: right;
+ }
+
+.navbar-default .navbar-nav>li>a:hover { 
+    color: #a6a6a6;
+}
+
+/*Navbar Scroll Bar*/
+li a.page.scroll {
+	font-size: 20px;
+	text-align: center;
+	color: #ee036a;
+}
+
+li a.page.scroll a.hover {
+	color: #A6A6A6;
+}
+
+
+/*Media Queries*/
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+}
+
+/*Navbar CSS*/
+@media screen and (min-width: 768px){
+    CSS
+}
+
+#custom-nav {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    box-shadow: none;
+    z-index: 999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+    transition: background .5s ease-in-out, opacity .5s ease;
+}
+
+#custom-nav .dropdown-menu {
     border-radius: 0;
-    color: #fff;
-    background-color: #bf1d5f;
+    border: none;
+    border-top: 5px solid transparent;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-top: 0;
 }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #bf1d5f;
-    background-color: #fff;
+#custom-nav .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
 }
 
-.btn-light {
-    border-radius: 0;
-    color: #fff;
-    background-color: #bf1d5f;
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #bf1d5f;
-    background-color: #fff;
-}
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-    position: absolute;
+#custom-nav.affix {
     top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: #bf1d5f;
+    min-width: 100%;
+    background-color: #f8f8f8;
+    opacity: 0.9;
+    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+    transition: background .5s ease-in-out, opacity .5s ease;
 }
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-    color: #bf1d5f;
+/*Navbar For Mobile*/
+@media screen and (max-width: 767px){
+    #wrapwrap {
+        padding-top: 50px;
+    }
+    .navbar-fixed-top {
+        z-index: 999;
+    }
 }
+   
 
-.sidebar-nav li a {
+/*Portfolio*/
+.block1 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
+    width: 100%;
     display: block;
-    text-decoration: none;
-    color: #bf1d5f;
+    text-align: 0 auto;
 }
 
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background-color: #bf1d5f;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
-#sidebar-wrapper .sidebar-brand {
-    font-size: 20px;
-    color: white;
-}
-
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    color: white;
+.block2 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
     width: 100%;
-    height: 100%;
-    background: url(img/code.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    display: block;
+    text-align: 0 auto;
 }
 
-#top h2{
-    font-size: 40px;
-    font-weight: 320;
+.block3 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
+    width: 100%;
+    display: block;
+    text-align: 0 auto;
 }
 
-.text-vertical-center .code{
-    color: #bf1d5f;
+.block4 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
+    width: 100%;
+    display: block;
+    text-align: 0 auto;
 }
 
-/* About */
+.block5 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
+    width: 100%;
+    display: block;
+    text-align: 0 auto;
+}
 
+.block6 {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/600x300);
+    height: 300px;
+    width: 100%;
+    display: block;
+    text-align: 0 auto;
+}
+
+/*about*/
 .about {
-    padding: 50px 0;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Footer */
-
-footer {
-    padding: 50px 0;
-    background-color: #bf1d5f;
-}
-
-footer a{
-    color: white;
-}
-
-footer h4{
-    color: white;
-}
-
-footer .text-muted{
-    color: white;
-}
-
-
-
-
-/* Video */
-.head-container {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/1900x300);
+    height: 400px;
     width: 100%;
-    height: 1000px;
-    border-left: none;
-    border-right: none;
-    position: relative;
-    padding: 20px;
+    display: block;
+    text-align: 0 auto;
 }
 
-.video-container {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
+/*contact*/
+.contact {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background: url(http://placehold.it/1900x300);
+    height: 400px;
     width: 100%;
-    overflow: hidden;
+    display: block;
+    text-align: 0 auto;
 }
 
-video {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
+div.footer h1 {
+    text-aligne: center;
 }
