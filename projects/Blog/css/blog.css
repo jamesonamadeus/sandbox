@@ -1,9 +1,6 @@
-/*
- * Globals
- */
-
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   color: #555;
 }
 
@@ -20,25 +17,50 @@ h6, .h6 {
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
+/* Override Bootstrap's default container. */
 
 @media (min-width: 1200px) {
   .container {
     width: 970px;
   }
 }
+/* Nav Bar */
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+  background-color: #FFFFFF;
+}
 
+.navbar-default .navbar-nav>li>a {
+  font-weight: 700;
+}
 
-/*
- * Masthead for nav
- */
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a {
+  border-bottom: 3px solid;
+  padding-bottom: 12px;
+}
 
-.blog-masthead {
-  background-color: #428bca;
-  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+.navbar-default .navbar-nav>li:first-child>a {
+  color: #e74c3c;
+}
+.navbar-default .navbar-nav>li:nth-child(2)>a {
+  color: #2ecc71;
+}
+.navbar-default .navbar-nav>li:nth-child(3)>a {
+  color: #3498db;
+}
+
+.navbar-brand {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.1em;
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/* Blog Page */
+#blog-page {
+  padding-top: 30px;
 }
 
 /* Nav links */

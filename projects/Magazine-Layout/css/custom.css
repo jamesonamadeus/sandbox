@@ -1,0 +1,137 @@
+/*Navbar*/
+.navbar {
+	background-color: transparent;
+	border: none;
+	margin-bottom: 0px;
+}
+
+.navbar-brand img {
+	width: 70%;
+	max-width: 353px;
+	margin-top: -10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fefefe;
+	opacity: .9;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #f49ac1;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+	background-image: url('../img/background.jpg') ;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-top: 3px solid #f49ac1;
+	margin-top: -55px;
+	margin-bottom: 0px;
+}
+
+.jumbotron h1 {
+	font-family: 'Open Sans', arial, "Helvetica neue", serif;
+	padding: 10px;
+	text-align: center;
+	margin: 10px 20px;
+	font-weight: 600;
+	font-size: 54px;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	text-shadow: 1px 1px 2px #333;
+}
+
+.jumbotron h1 span {
+	color: #f49ac1;
+}
+
+/*Bottom-Section*/
+#bottom-section .col-sm-4{
+	min-height: 375px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 300px;
+}
+
+#bottom-section .col-sm-4 .btn-info {
+	background-color: #f49ac1;
+	margin-bottom: 5px;
+	font-family: 'Open Sans', arial, "Helvetica neue", serif;
+	font-size: 24px;
+	font-weight: 100;
+	text-transform: uppercase;
+	border-color: #555555;
+	border-width: 2px;
+}
+
+#bottom-section .col-sm-4:hover {
+	opacity: .8;
+}
+
+#bottom-section .col-sm-4 .btn-info:hover {
+	background-color: #ffffff;
+	color: #f49ac1;
+}
+
+#wefunder {
+	background-image: url(../img/wefunder-logo.png) ;
+	background-color: #476d92;
+}
+
+#fundable {
+	background-image: url(../img/fundable-logo.png) ;
+	background-color: #a3d39c;
+}
+
+#crowdfunder {
+	background-image: url(../img/crowdfunder-logo.jpg) ;
+	background-color: #262626;
+}
+
+/*Footer*/
+footer {
+	background-color: #333;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #fefefe;
+	text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) { 
+	#bottom-section .col-sm-4 {
+		min-height: 220px;
+		padding-bottom: 5px;
+		padding-top: 50%;
+	}
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.navbar-brand {
+		width: 50%;
+	}
+	.navbar-brand img {
+		width: 220px;
+	}
+	.navbar-inverse .navbar-brand {
+		border: none;
+	}
+	.jumbotron {
+		margin-top: -186px;
+		padding-top: 260px;
+		padding-bottom: 100px;
+	}
+}
