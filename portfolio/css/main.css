@@ -140,14 +140,53 @@ li a.page.scroll a.hover {
         z-index: 999;
     }
 }
-   
+
+
+/*about*/
+#about {
+    margin: 10px 0 10px 0;
+    background-position: 50% 50%;
+    background:
+    height: 400px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.row .col-lg-12 {
+    text-align: center;
+}
+
+.row .col-lg-12 h1 {
+    color: #ee036a;
+}
+
+.row .col-lg-12 h1 .bracket{
+    color: #ffffff;
+}
+
+.row .col-lg-12 h2{
+    color: #ffffff;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
 /*Portfolio*/
-.block1,
 
+#portfolio h1{
+    text-align: center;
+    color: #ee036a;
+}
+
+#portfolio h1 .bracket{
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.block1,
 .block2, 
 .block3,
-
 .block4,
 .block5,
 .block6 {
@@ -159,17 +198,6 @@ li a.page.scroll a.hover {
     display: block;
     text-align: 0 auto;
     background-size: cover;
-}
-
-/*about*/
-.about {
-    margin: 10px 0 10px 0;
-    background-position: 50% 50%;
-    background: url(http://placehold.it/1900x400) no-repeat center;
-    height: 400px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
 }
 
 /*contact*/
