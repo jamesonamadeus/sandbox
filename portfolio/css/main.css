@@ -65,6 +65,12 @@ li a.page.scroll a.hover {
 	color: #A6A6A6;
 }
 
+/*Navbar Scroll Bar Change Color*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #ee036a;
+}
+
 
 /*Media Queries*/
 /* SMARTPHONES PORTRAIT */
