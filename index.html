@@ -1,101 +1,290 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>.:ja | UX Designer | Front End Developer:.</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Monofett|Megrim|Text+Me+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <meta name="viewpoint" content="width=device-width, initial scale=1.0">
-      
-    </head>
-    <body>
-        <header>
-            <a href="index.html" id="logo">
-                <h1>jameson.:.amadeus</h1>
-                <h2>UX | FRONT END DEV</h2>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">.:portfolio</a></li>
-                    <li><a href="about.html" >.:about</a></li>
-                    <li><a href="blog.html" >.:blog</a></li>
-                    <li><a href="contact.html" >.:contact</a></li>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jameson.amadeus</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
+    <header>
+       <div id="custom-nav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+             <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#outer-wrap">
+                    &lt;jamesonamadeus&gt;
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">&lt;about&gt;</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">&lt;portfolio&gt;</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">&lt;contact&gt;</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        <div id="wrapper">
-            <section>
-                <ul id="gallery">
-                    <li>
-                        <a href="img/Can't-Stop-The-Waves-But-You-Can-Learn-How-To-Surf.jpg">
-                            <img src="img/Can't-Stop-The-Waves-But-You-Can-Learn-How-To-Surf.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/collect-memories.jpg">
-                            <img src="img/collect-memories.jpg" alt="">
-                        </a>
-                    </li>
-                     <li>
-                        <a href="img/feels-good-to-be-lost-in-the-right-direction.jpg">
-                            <img src="img/feels-good-to-be-lost-in-the-right-direction.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Dreams-Don't-Work-Unless-You-Do.jpg">
-                            <img src="img/Dreams-Don't-Work-Unless-You-Do.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Go-Somewhere.jpg">
-                            <img src="img/Go-Somewhere.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/life-too-short-to-be-anything-bu-happy.jpg">
-                            <img src="img/life-too-short-to-be-anything-bu-happy.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Never-Get-So-Busy.jpg">
-                            <img src="img/Never-Get-So-Busy.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Live-To-Work.jpg">
-                            <img src="img/Live-To-Work.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Our-Dream-Don't-Need-To-End-When-We-Wake-Up.jpg">
-                            <img src="img/Our-Dream-Don't-Need-To-End-When-We-Wake-Up.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Travel-Often.jpg">
-                            <img src="img/Travel-Often.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/Small-Moments.jpg">
-                            <img src="img/Small-Moments.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="img/start-the-next-chapter.jpg">
-                            <img src="img/start-the-next-chapter.jpg" alt="">
-                        </a>
-                    </li> 
-                </ul>
-            </section>
-            <footer>
-                <a href="https://twitter.com/jamesonamadeus" target="_blank"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
-                <a href="https://github.com/jamesonamadeus" target="_blank"><img src="img/ghub.png" alt="GitHub Logo" class="social-icon"></a>
-                <a href="https://www.linkedin.com/in/jameschoi03" target="_blank"><img src="img/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
-                <p>&copy; 2015 jamesonamadeus.</p>
-            </footer>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </body>
+        <!-- /.container -->
+    </nav>
+    </header>
+
+    <div id="outer-wrap">
+        <div id="video-wrap">
+            <video id="my-video" preload="metadata" autoplay loop >
+                <source src="video/Code.mp4" type="video/mp4">
+                <source src="video/Code.webm" type="video/webm">
+                <source src="video/Code.ogv" type="video/ogv">
+                <img src="img/code_.jpg">
+            </video>
+        </div>
+    </div>
+
+    <!--about-->
+    <div id="about">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h1> 
+            <span class="bracket">&lsaquo;</span>
+            about
+            <span class="bracket"> &rsaquo;</span> 
+            </h1>
+
+            <h2> hello.<br>my name is jimi choi.<br>i am a user enthusiast in boston, who is passionate in bringing ideas to life through code. i have a huge appetite for learning and experimenting not only in user experience but the front-end development as well.  </h2>
+            <h1> 
+            <span class="bracket">&lsaquo; &frasl; </span>
+            about
+            <span class="bracket"> &rsaquo; </span> 
+            </h1>
+        </div>
+    </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="row">
+            <h1> 
+                <span class="bracket">&lsaquo;</span>
+                portfolio
+                <span class="bracket"> &rsaquo;</span> 
+            </h1>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://jamesonamadeus.com/projects/Landing%20Page_Coming%20Soon_QWERTY/index.html" target="_blank" class="portfolio-box">
+                        <img src="img/portfolio/qwerty.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Coming Soon - Landing Page
+                                </div>
+                                <div class="project-name">
+                                    QWERTY
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://jamesonamadeus.com/projects/bootstrapmockwebsite/index.html" target="_blank" class="portfolio-box">
+                        <img src="img/portfolio/onemillionlines.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Landing Page
+                                </div>
+                                <div class="project-name">
+                                    One Million Lines_
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://jamesonamadeus.com/projects/Magazine-Layout/index.html" target="_blank" class="portfolio-box">
+                        <img src="img/portfolio/fundup.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Magazine Layout Page
+                                </div>
+                                <div class="project-name">
+                                    FUNDUP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/workable.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Mockups
+                                </div>
+                                <div class="project-name">
+                                    Workable Scorecards
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/neighborlend.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Mockups
+                                </div>
+                                <div class="project-name">
+                                    neighborlend
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://jamesonamadeus.com/projects/oldsite/index.html" target="_blank" class="portfolio-box">
+                        <img src="img/portfolio/oldsite.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Responsive Site
+                                </div>
+                                <div class="project-name">
+                                    Old Portfolio Site
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <h1> 
+                <span class="bracket">&lsaquo; &frasl; </span>
+                portfolio
+                <span class="bracket"> &rsaquo; </span> 
+            </h1>
+        </div>
+    </div>
+
+
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h1> 
+                    <span class="bracket">&lsaquo;</span>
+                    contact
+                    <span class="bracket"> &rsaquo;</span> 
+                </h1>
+
+                <div class="mailicon">
+                    <a href="mailto:jamesonamadeus@gmail.com"><i class="fa fa-envelope fa-5x"></i></a>
+                </div>
+                    <a href="mailto:jamesonamadeus@gmail.com"><h2> say hello | give feedback | work together </h2></a> 
+                <h1> 
+                    <span class="bracket">&lsaquo; &frasl; </span>
+                    contact
+                    <span class="bracket"> &rsaquo; </span> 
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="socialicons">
+            <a href="https://twitter.com/jamesonamadeus" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+
+            <a href="https://github.com/jamesonamadeus" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+
+            <a href="https://www.linkedin.com/in/jameschoi03" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+            <br>
+            <img src="img/LoveBoston.png">
+            <p>&copy; 2015 jamesonamadeus</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+    <!-- Put your page content here! -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--NavBar Javascript-->
+    <script src="js/navbar.js"></script>
+
+    <!--Smooth Scroll-->
+    <script src="js/smoothscroll.js"></script>
+
+    <!-- Video JavaScript -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/backgroundVideo.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(element).backgroundVideo();
+    });
+</script>
+
+</body>
+
 </html>
