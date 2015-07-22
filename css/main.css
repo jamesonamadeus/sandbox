@@ -22,13 +22,11 @@ body {
 	parallaxOptions.effect: 1
 	object-fill: cover;
     text-align: auto 0;
-    z-index: -1;
 }
 
 div #outer-wrap {
     width: 100%;
     height: 450px;
-    z-index: -1;
     text-align: auto 0;
 }
 
