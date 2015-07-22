@@ -12,18 +12,51 @@ body {
 
 }
 
+/*Video Wrap Section*/
+
 #video-wrap video {
 	width: 100%;
-	background-size: cover
+    height: 81vh;
+	background-size: cover;
 	background-attachment: fixed
 	parallaxOptions.effect: 1
 	object-fill: cover;
+    text-align: auto 0;
+    z-index: -1;
 }
 
 div #outer-wrap {
-	width: 100%;
-	height: 450px;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    text-align: auto 0;
 }
+
+/*Video Scroll Down*/
+.btn-circle {
+    position: relative;
+    left: 48%;
+    margin-bottom: 105px;
+    width: 70px;
+    height: 70px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #ee036a;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+
 
 /*Navbar Font-Size FullScreen 1920*/
 a.navbar-brand.page-scroll {
