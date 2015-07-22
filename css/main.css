@@ -193,25 +193,7 @@ li a.page.scroll a.hover {
     color: #ffffff;
 }
 
-
-/*.block1,
-.block2, 
-.block3,
-.block4,
-.block5,
-.block6 {
-    margin: 5px 0 5px 0;
-    background-position: 50% 50%;
-    background-color: white;
-    background: url(http://placehold.it/600x300) no-repeat center;
-    height: 300px;
-    width: 100%;
-    display: block;
-    text-align: 0 auto;
-    background-size: cover;
-}*/
-
-section {
+.section {
     padding: 100px 0;
 }
 
