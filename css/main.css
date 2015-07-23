@@ -55,7 +55,7 @@ div #outer-wrap {
 }
 
 
-/*Navbar Font-Size FullScreen 1920*/
+/*Navbar Font-Size FullScreen*/
 a.navbar-brand.page-scroll {
 	font-size: 28px;
 	color: #ee036a;
@@ -101,30 +101,6 @@ li a.page.scroll a.hover {
     background-color: #ee036a;
 }
 
-
-/*Media Queries*/
-/* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
-}
-
-/* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
-}
-
-/* TABLETS PORTRAIT */
-@media only screen and (min-width: 768px) {
-}
-
-
-/* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
-}
-
-/*Navbar CSS*/
-@media screen and (min-width: 768px){
-    CSS
-}
-
 #custom-nav {
     background-color: rgba(0,0,0,0);
     border: 0;
@@ -163,18 +139,6 @@ li a.page.scroll a.hover {
     -webkit-transition: background .5s ease-in-out, opacity .5s ease;
     -moz-transition: background .5s ease-in-out, opacity .5s ease;
     transition: background .5s ease-in-out, opacity .5s ease;
-}
-
-/*Navbar For Mobile*/
-@media screen and (max-width: 767px){
-    #wrapwrap {
-        padding-top: 50px;
-    }
-
-    
-    .navbar-fixed-top {
-        z-index: 999;
-    }
 }
 
 
@@ -281,15 +245,6 @@ li a.page.scroll a.hover {
     opacity: 1;
 }
 
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
-}
 
 .no-gutter > [class*=col-] {
     padding-right: 0;
@@ -338,4 +293,43 @@ footer .row .col-lg-12 .socialicons i{
 
 footer .row .col-lg-12 .socialicons i:hover{
     color: #000000;
+}
+
+
+/*Responsive*/
+
+/*Media Smaller Screens*/
+@media screen and (max-width: 767px){
+    #wrapwrap {
+        padding-top: 50px;
+    }
+
+    
+    .navbar-fixed-top {
+        z-index: 999;
+    }
+
+    .row .col-lg-12 h2{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    }
+
+    a.navbar-brand.page-scroll {
+    font-size: 24px;
+    color: #ee036a;
+    text-align: right;
+    margin-top: 10px;
+}
+
+}
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
 }
