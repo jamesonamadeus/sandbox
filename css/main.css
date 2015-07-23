@@ -320,7 +320,12 @@ footer .row .col-lg-12 .socialicons i:hover{
     color: #ee036a;
     text-align: right;
     margin-top: 10px;
-}
+    }   
+
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -40px;
+    margin-left: -30px;
+    }   
 
 }
 
