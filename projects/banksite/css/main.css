@@ -26,6 +26,7 @@ body {
 .navbar-default {
 	background-color: #003366;
 	border-color: #003366;
+	border-width: 0px;
  }
 
 .navbar-default .navbar-nav>li>a {
@@ -36,8 +37,6 @@ body {
 	margin-top: 30px;
 	width: 100px;
 	height: 40px;
-	border: none;
-	border-width: 0px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -110,8 +109,18 @@ body {
 	margin-top: 50px;
 }
 
+div.col-sm-1 a {
+  color: #acb3b9;
+  text-transform: uppercase;
+}
+
 .row .paymentmenu .paymenttabs .col-sm-8 {
 	text-align: right;
+}
+
+div.col-sm-8 a {
+  color: #0079c0;
+  text-transform: uppercase;
 }
 
 
