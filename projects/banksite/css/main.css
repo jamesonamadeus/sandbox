@@ -1,0 +1,121 @@
+body {
+    background-color: #f8f9fc;
+    padding-top: 170px;
+}
+
+}
+
+/*Fonts*/
+
+@font-face {
+   font-family: PromixaNova;
+   src: url(../fonts/promixanova/promixanova-regular.otf);
+}
+
+/*Navbar*/
+
+.nav .navbar {
+	font-family: PromixaNova;
+	font-weight: 400;
+}
+
+.navbar-fixed-top {
+	padding-top: 50px;
+}
+
+.navbar-default {
+	background-color: #003366;
+	border-color: #003366;
+ }
+
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+	text-align: center;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-width: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: #fff;
+	color: #003366;
+	border-color: #fff;
+	border-width: 0px;
+}
+
+.navbar-nav>li {
+  float: none;
+  border: none;
+  padding-bottom: 0px;
+}
+
+/*Dashboard CSS Adjustments*/
+.navbar-default .navbar-nav li.dashboard a{
+	text-align: left;
+}
+
+/*Customerservice CSS Adjustments*/
+.navbar-default .navbar-nav li.customerservice a{
+	width: 160px;
+}
+
+/*Logout CSS Adjustments*/
+.navbar-default .navbar-nav li.logout a{
+	text-align: right;
+	bottom: 50px;
+}
+
+/*Pay Bills Container*/
+.container .row {
+	clear: both;
+	width: 100%;
+}
+
+.container .row .col-md-8 h1{
+	text-align: left;
+	color: #202123;
+}
+
+.container .row .col-md-4 {
+	padding-right: 0px;
+}
+
+.btn-warning {
+	float: right;
+	background-color: #ed831e;
+	border: none;
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+	margin-top: 20px;
+}
+
+.container .row .balance-menu-row {
+	margin-top: 10px;
+}
+
+.container .row .col-md-1 {
+	padding-right: 0;
+}
+
+.container .row .col-md-11 {
+	margin-top: 2px;
+	padding-left: 7px;
+}
+
+.row .paymentmenu {
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
