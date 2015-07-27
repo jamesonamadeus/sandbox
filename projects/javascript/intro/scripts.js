@@ -1,4 +1,7 @@
-var cars = new Array("Honda","Toyota","Ford");
-cars[3] = "Dodge";
+function add(num1,num2){
+	sum = num1 + num2;
+	return sum;
 
-document.write(cars.index of('Toyota'));
+}
+
+document.write(add("5","5"));
