@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabbed Form</title>
+
+		<!--favicon-->
+	    <link rel="icon"
+	      type="image/png"
+	      href="img/favicon.png" />
+
+		<!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Share:400,700' rel='stylesheet' type='text/css'>
+
+
+	</head>
+	<body>
+		<form name="myform" onsubmit="return validateForm()">
+		<ul>
+
+			<li id="who" class="title">Who Are You?</li>
+			<li class="fields">
+				<label>*First Name:</label><br />
+					<input id="first_name" class="req" type="text" /><br />
+				<label>Middle Name:</label><br />
+					<input id="middle_name" type="text" /><br />
+				<label>Last Name:</label><br />
+					<input id="last_name" type="text" /><br />
+				<label>*Email:</label><br />
+					<input id="email" class="req" type="text" /><br />
+			</li>
+
+			<li id="where" class="title">Where Are You Located?</li>
+			<li class="fields">
+				<label>City:</label><br />
+					<input id="city" type="text" /><br />
+				<label>*State:</label><br />
+					<input id="state" class="req" type="text" /><br />
+				<label>Country:</label><br />
+					<input id="country" type="text" /><br />
+			</li>
+
+			<li id="what" class="title">What Is Your Occupation?</li>
+			<li class="fields">
+				<label>*Occupation:</label><br />
+					<input id="occupation" class="req" type="text" /><br />
+				<label>Company:</label><br />
+					<input id="company" type="text" /><br />
+				<label>Company Location:</label><br />
+					<input id="location" type="text" /><br />
+			</li>
+		</ul>
+		<div class="button">
+			<input type="submit" value="Submit Form" />
+		</div>
+	</form>
+
+
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+	<script src="js/validation.js" type="text/javascript"></script>
+	</body>
+</html>

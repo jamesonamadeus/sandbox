@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    font-family: 'Share', verdana, cursive;
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    font-size : 1.5em;
+	list-style:none;
+    margin: 0 auto;
+}
+
+li.fields {
+    margin: 0;
+	
+    padding: 1em 0;
+}
+
+li#who {
+    cursor: pointer;
+    
+	color: #ecf0f1;
+    font-weight: bold;
+    font-size : 2.5em;
+    line-height: 3.5em;
+    background: #2ecc71;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+    text-transform: uppercase;
+}
+
+li#where {
+    cursor: pointer;
+    
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size : 2.5em;
+    line-height: 3.5em;
+    background: #e74c3c;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+    text-transform: uppercase;
+}
+
+li#what {
+    cursor: pointer;
+    
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size : 2.5em;
+    line-height: 3.5em;
+    background: #9b59b6;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+    text-transform: uppercase;
+}
+
+div.button {
+    width: 50%;
+
+    margin: 0 auto;
+
+}
+
+.button input{
+    text-align: center;
+    font-family: 'Share', verdana, cursive;
+    font-size: 18px;
+    color: #ecf0f1;
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+}
+
+.hide { 
+    display: none;
+}
