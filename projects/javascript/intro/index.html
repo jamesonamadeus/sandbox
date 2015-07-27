@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Javascript Conditionals</title>
+		<title>JQuery</title>
+		<style>
+			.red{color:red;}
+		</style>
+		<script type="text/javascript" src="jquery.js"></script>
 		<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+		  		$("h1").html("Here is some new text");
+		  	});
+		});
 		</script>
 	</head>
 	<body>
-		<form>
-			Name: <input onfocus="return focusIn()" onblur="return blurOut()" type="text" name="name" /><br />
-			<input type="submit" value="Submit" />
+	<button>Change Text</button>
+
+	<h1>This is the text to change</h1>
 
 
-	<script src="scripts.js">
-	</script>
+
+	<script src="jquery.js"></script>
 	</body>
 </html>
