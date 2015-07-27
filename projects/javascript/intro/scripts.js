@@ -1,11 +1,11 @@
-x = 4;
-switch(x){
-	case 2:
-		document.write("x is 2");
-		break;
-	case 5:
-		document.write("x is 5");
-		break;
-	default:
-		document.write("x is");
+function focusIn (){
+	alert("I am in the field");
 }
+
+function blurOut (){
+	alert("I out of the field");
+}
+
+
+
+
