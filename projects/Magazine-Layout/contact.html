@@ -51,14 +51,30 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h2>Adipiscing convallis adipiscing in sed hendrerit condimentum torquent rutrum cubilia torquent sed sodales a dui a convallis condimentum natoque nisi nisi nostra rhoncus a a tristique parturient orci himenaeos. Auctor quis parturient urna a lobortis libero torquent dis dolor ut suspendisse imperdiet vehicula convallis a vestibulum luctus consectetur elit platea. A sit laoreet etiam montes aenean massa duis ullamcorper a per quam ultrices suspendisse adipiscing porta hac. Consequat adipiscing suspendisse facilisis parturient habitasse adipiscing praesent a quis vitae et interdum a a ullamcorper consectetur mi phasellus parturient.
-
-        Donec eu et curae aptent natoque suspendisse condimentum hac ad egestas a luctus suscipit suspendisse condimentum vestibulum parturient condimentum a dictum parturient pulvinar turpis vulputate a tempus lacinia cubilia. Parturient ullamcorper quis ut est nam ridiculus nibh vestibulum litora justo at torquent venenatis ut. Odio quis quam ante eu libero ad tempus elit in parturient volutpat quis adipiscing dolor fermentum vulputate nec adipiscing donec elementum condimentum scelerisque posuere condimentum consectetur fringilla tempus vestibulum. Interdum scelerisque adipiscing varius feugiat lacus a molestie ullamcorper proin in per ac porttitor penatibus. Vivamus vitae a consequat id fusce consectetur eros in facilisis class habitant iaculis adipiscing parturient euismod.
-
-        A sed ornare sociosqu conubia a quam libero pulvinar nec libero lobortis suspendisse id eu condimentum viverra ultricies a.</h2>
+        <div id="form-main">
+          <div id="form-div">
+            <form class="form" id="form1">
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+              </p>
+    
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              </p>
+    
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+              </p>
+    
+              <div class="submit">
+                <input type="submit" value="SEND" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
   <footer>
     <div class ="container">
