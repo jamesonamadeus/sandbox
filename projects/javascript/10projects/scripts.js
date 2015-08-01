@@ -1,0 +1,3 @@
+function thealertmessage() {
+	alert ('hello')
+	}	

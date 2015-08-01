@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+
 	</head>
 	<body>
-	<input type="button" onclick="alert('Hello World')" value="Click me!">
+		<p onMouseOver="thealertmessage()">on mouse over</p>
+		<p onMouseDown="thealertmessage()">on mouse down</p>
+		<p onMouseUp="thealertmessage()">on mouse up</p>
+		<p onMouseOut="thealertmessage()">on mouse out</p>
+
+		<input type="text" placeholder="on click event" onClick="thealertmessage()">
+		<input type="text" placeholder="on key down" onKeyDown="thealertmessage()">
+		<input type="text" placeholder="on key up" onKeyUp="thealertmessage()">
+		<input type="text" placeholder="on focus" onFocus="thealertmessage()">
+		<input type="text" placeholder="on blur" onBlur="thealertmessage()">
+		<input type="text" placeholder="on change" onChange="thealertmessage()">
+		<input type="checkbox" onClick="thealertmessage()">
+
+
+	<script src="scripts.js"></script>
 	</body>
 </html>
