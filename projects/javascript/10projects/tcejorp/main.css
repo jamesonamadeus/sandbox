@@ -1,0 +1,32 @@
+body > div {
+	background:rgb(240,240,240); 
+	width:70%; 
+	height:1000px; 
+	margin:auto; 
+	position:relative
+}
+
+div > div p {
+	width:60%;
+}
+
+img {
+	width:30%; 
+	position:absolute; 
+	top:0; 
+	right:-100px;
+}
+
+h1 {
+	width:50%; 
+	margin-right:10%; 
+	float:left; 
+	background:rgb(250,230,230)
+}
+
+ul {
+	width:40%; 
+	background:rgb(230,250,230); 
+	float:left; 
+	padding:0
+}
