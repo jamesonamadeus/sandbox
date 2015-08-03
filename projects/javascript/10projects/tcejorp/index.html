@@ -6,27 +6,37 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 
     </head>
+
     <body>
 
-    <div>
+    <fieldset>
         <div>
-          <p>Sed do eiusmod tempor incididunt duis aute irure dolor in reprehenderit in voluptate. Consectetur adipisicing elit, lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Qui officia deserunt sunt in culpa in reprehenderit in voluptate. Cupidatat non proident, sed do eiusmod tempor incididunt velit esse cillum dolore.</p>
-            <img src="beach_large.jpg">
-        </div>
+            <p><input type="text" placeholder="Name" onFocus="namefocus()"></p>
 
+            <p><input type="text" placeholder="Email" onFocus="emailfocus()" onBlur="emailblur()"></p>
+
+            <p><input type="text" placeholder="Password" onFocus="passwordfocus()" onBlur="passwordblur()"></p>
+
+            <p><input type="text" placeholder="Password Confirm" onBlur="passwordconfirm()"></p>
+
+            <p>Do you have a website?<input type="checkbox" onChange="checked()"></p>
+
+            <p><input type="text" placeholder="URL" onFocus="urlfocus()" onBlur="urlblur()"></p>
+        </div>
+            
         <div>
-        <h1>This is a website</h1>
-            <ul>
-                <li>Sed do eiusmod</li>
-                <li>eiusmod tempo</li>
-                <li>incididunt duis</li>
-                <li>dipisicing elit</li>
-                <li>cillum dolore</li>
-            </ul>
+            <p id="namepara">&nbsp;</p>
+            <p id="emailpara">&nbsp;</p>
+            <p id="passwordpara">Must have at least 5 Characters</p>
+            <p id="passwordconf">Passwords Dont Match</p>
+            <p>&nbsp;</p>
+            <p>Please Enter The URL</p>
         </div>
+    
+    </fieldset>
 
-    </div>
+    <script src="scripts.js"></script> 
 
     </body>
-    
+
 </html>

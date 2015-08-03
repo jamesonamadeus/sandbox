@@ -1,11 +1,19 @@
-function bigger(){
-	document.getElementsByTagName("body")[0].style.fontSize = 2.3 + "em";
-	document.getElementsByTagName("input")[0].style.display = "none";
-	document.getElementsByTagName("input")[1].style.display = "block";
+function namefocus(){
+	document.getElementById("namepara").innerHTML = "First Name Ony";
 }
 
-function smaller(){
-	document.getElementsByTagName("body")[0].style.fontSize = 1 + "em";
-	document.getElementsByTagName("input")[0].style.display = "block";
-	document.getElementsByTagName("input")[1].style.display = "none";
+function emailfocus(){
+	document.getElementById("emailpara").innerHTML = "Please provide a real email address";
+}
+
+function emailblur(){
+	document.getElementById("emailpara").innerHTML = "&nbsp;";
+}
+
+function passwordfocus(){
+	document.getElementById("passwordpara").style.visibility = "visible"
+}
+
+function passwordblur(){
+	document.getElementById("passwordpara").style.visibility = "hidden"
 }

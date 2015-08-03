@@ -1,32 +1,32 @@
-body > div {
-	background:rgb(240,240,240); 
-	width:70%; 
-	height:1000px; 
-	margin:auto; 
-	position:relative
+body {
+	background-color: #2ecc71;
+	color: #ffffff;
 }
 
-div > div p {
-	width:60%;
-}
-
-img {
-	width:30%; 
-	position:absolute; 
-	top:0; 
-	right:-100px;
-}
-
-h1 {
+fieldset{
 	width:50%; 
-	margin-right:10%; 
-	float:left; 
-	background:rgb(250,230,230)
+	padding:50px; 
+	margin:auto
 }
 
-ul {
-	width:40%; 
-	background:rgb(230,250,230); 
+body div:first-of-type{
 	float:left; 
-	padding:0
+	width:48%; 
+	text-align:right; 
+	margin-right:2%;
+}
+
+body div:last-of-type{
+	float:left; 
+	width:50%;
+}
+
+p {
+	height:25px;
+}
+
+#passwordpara,
+#passwordconf,
+#url {
+	visibility: hidden;
 }
