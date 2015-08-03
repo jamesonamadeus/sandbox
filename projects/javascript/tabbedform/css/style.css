@@ -1,5 +1,10 @@
 body {
+    background-image: url("../img/bg.jpg");
     width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     font-family: 'Share', verdana, cursive;
     margin: auto;
     text-align: center;
@@ -7,11 +12,12 @@ body {
 
 ul {
     padding: 0;
+    margin-top: 7%;
 }
 
 li {
     font-size : 1.5em;
-	list-style:none;
+	list-style: none;
     margin: 0 auto;
 }
 
@@ -24,39 +30,39 @@ li.fields {
 li#who {
     cursor: pointer;
     
-	color: #ecf0f1;
+	color: #e5e1e0;
     font-weight: bold;
     font-size : 2.5em;
     line-height: 3.5em;
-    background: #2ecc71;
-    border-bottom: 1px solid #c5c5c5;
-    border-top: 1px solid white;
+    background: #045824;
+    border-bottom: 1px solid #e5e1e0;
+    border-top: 1px solid #e5e1e0;
     text-transform: uppercase;
 }
 
 li#where {
     cursor: pointer;
     
-    color: #ecf0f1;
+    color: #e5e1e0;
     font-weight: bold;
     font-size : 2.5em;
     line-height: 3.5em;
-    background: #e74c3c;
-    border-bottom: 1px solid #c5c5c5;
-    border-top: 1px solid white;
+    background: #018f05;
+    border-bottom: 1px solid #e5e1e0;
+    border-top: 1px solid #e5e1e0;
     text-transform: uppercase;
 }
 
 li#what {
     cursor: pointer;
     
-    color: #ecf0f1;
+    color: #e5e1e0;
     font-weight: bold;
     font-size : 2.5em;
     line-height: 3.5em;
-    background: #9b59b6;
-    border-bottom: 1px solid #c5c5c5;
-    border-top: 1px solid white;
+    background: #03ac37;
+    border-bottom: 1px solid #e5e1e0;
+    border-top: 1px solid #e5e1e0;
     text-transform: uppercase;
 }
 
@@ -71,10 +77,18 @@ div.button {
     text-align: center;
     font-family: 'Share', verdana, cursive;
     font-size: 18px;
-    color: #ecf0f1;
+    border-color: #01a94a;
+    border-width: 4px;
+    color: #01a94a;
     width: 150px;
     height: 50px;
-    background-color: #3498db;
+    background-color: #ffffff;
+}
+
+.button input:hover{
+    background-color: #01a94a;
+    color: #ffffff;
+
 }
 
 .hide { 
