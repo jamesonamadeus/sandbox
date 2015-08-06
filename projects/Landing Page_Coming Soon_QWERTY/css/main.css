@@ -1,8 +1,7 @@
-
 body {
     /*margin-top: 50px;  Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: 'Droid Serif', serif;
-    height: 100vh;
+    height: 100;
     margin-left:auto;
     margin-right:auto;
     background: url(../img/typewriter_.jpg) no-repeat center center fixed;
