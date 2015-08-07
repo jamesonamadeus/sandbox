@@ -30,3 +30,7 @@ p {
 #url {
 	visibility: hidden;
 }
+
+#theurlfield {
+	display: none;
+}

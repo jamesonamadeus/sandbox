@@ -11,7 +11,7 @@
 
     <fieldset>
         <div>
-            <p><input type="text" placeholder="Name" onFocus="namefocus()"></p>
+            <p><input type="text" placeholder="Name" onFocus="namefocus()" onBlur="nameblur()"></p>
 
             <p><input type="text" placeholder="Email" onFocus="emailfocus()" onBlur="emailblur()"></p>
 
@@ -19,9 +19,9 @@
 
             <p><input type="text" placeholder="Password Confirm" onBlur="passwordconfirm()"></p>
 
-            <p>Do you have a website?<input type="checkbox" onChange="checked()"></p>
+            <p>Do you have a website?<input type="checkbox" onChange="ischecked()"></p>
 
-            <p><input type="text" placeholder="URL" onFocus="urlfocus()" onBlur="urlblur()"></p>
+            <p><input id="theurlfield" type="text" placeholder="URL" onFocus="urlfocus()" onBlur="urlblur()"></p>
         </div>
             
         <div>
@@ -30,7 +30,7 @@
             <p id="passwordpara">Must have at least 5 Characters</p>
             <p id="passwordconf">Passwords Dont Match</p>
             <p>&nbsp;</p>
-            <p>Please Enter The URL</p>
+            <p id="url">Please Enter The URL</p>
         </div>
     
     </fieldset>
