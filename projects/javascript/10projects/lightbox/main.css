@@ -1,5 +1,6 @@
 #popup {
 	position: absolute;
+	background: #fff;
 	top: 50%;
 	left: 50%;
 	width: 200px;
@@ -9,6 +10,7 @@
 	text-align: center;
 	display: none;
 	z-index: 999999;
+
 }
 
 #mask {
