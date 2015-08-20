@@ -1,0 +1,10 @@
+body > div {
+	width: 900px;
+	margin: auto;
+}
+
+#thumbs img {
+	width: 250px;
+	margin:0 25px;
+	float: left;
+}
