@@ -1,4 +1,13 @@
 // //Variables
+// var name = "Your Name";
+// console.log(name);
+
+// var a = 20;
+// var b = 40;
+// c = a + b;
+// console.log(c);
+// console.log(b - a);
+
 // var a = 10;
 // a = a + 100;
 // console.log(a);
@@ -26,11 +35,10 @@
 // var lastName = "XYZ";
 
 // var fullName = name + ", " + lastName;
-// console.log(fullName + ' age:' + age);
+// console.log(fullName);
 
 // var age = 100;
 // console.log(fullName + " age" + age);
-
 
 
 
@@ -41,23 +49,23 @@
 // }
 
 // var c = 30;
-// var f = c * 9/5 + 32;
+// var f = converter(c);
 // console.log(f);
 
 // var c = 34;
-// var f = c * 9/5 + 32;
+// var f = converter(c);
 // console.log(f);
 
 // var c = 44;
-// var f = c * 9/5 + 32;
+// var f = converter(c);
 // console.log(f);
 
 // var c = 10;
-// var f = c * 9/5 + 32;
+// var f = converter(c);
 // console.log(f);
 
 // var c = 20;
-// var f = c * 9/5 + 32;
+// var f = converter(c);
 // console.log(f);
 
 
@@ -65,16 +73,16 @@
 // //Nested Functions
 // var text = "Hello";
 
-// function decorate(t){
-// 	return "####-----" + t + "---####";
+// function decorate(b){
+// 	return "####-----" + b + "---####";
 // }
 
 // console.log(decorate(text));
 // console.log(text);
 // console.log(decorate("yoooo"));
 
-// function decorateMore(t) {
-// 	var a = decorate(t);
+// function decorateMore(b) {
+// 	var a = decorate(b);
 // 	return "(((" + a + ')))';
 // }
 
@@ -82,7 +90,7 @@
 
 
 
-// //If Statements
+//If Statements
 // var distance = 50;
 
 // if(distance >= 200){
@@ -101,7 +109,7 @@
 // 	console.log("not equal to 50");
 // }
 
-// var condition = distance !=50;
+// var condition = distance ==="50";
 // console.log(condition);
 
 // var cond2 = true;
@@ -137,7 +145,7 @@
 
 // //Negating a Condition
 // var a = 1;
-// var isReady = false;
+// var isReady = true;
 
 // console.log(isReady);
 // console.log(!isReady);
@@ -149,13 +157,17 @@
 
 
 // //If-Else Statements
-// var mark = 0; 
+// var mark = 3; 
 
 // if (mark >= 6) {
 // 	console.log("passed");
-// } else if (mark < 6 && mark > 4){
+// } 
+
+// else if (mark < 6 && mark > 4) {
 // 	console.log("passed");
-// } else if (mark < 4 && mark >= 3){
+// } 
+
+// else if (mark < 4 && mark >= 3) {
 // 	console.log("eligible for exam");
 // }
 
@@ -168,7 +180,7 @@
 
 
 // //Switch Statements
-// var mark = "X";
+// var mark = "B";
 
 // switch(mark) {
 // 	case "A":
@@ -229,19 +241,19 @@
 
 
 
-// //While Loop
-// 	var i = 1; 
+//While Loop
+	var i = 1; 
 
-// 	while (i <= 200){
-// 		console.log(i);
-// 		i++;
+	while (i <= 200){
+		console.log(i);
+		i++;
 
-// 	}
-// 	console.log("final value of i:" + i);
+	}
+	console.log("final value of i:" + i);
 
 
 
-// //Loop Jumps
+// // //Loop Jumps
 // var num = 1;
 
 // while(num <= 100) {
@@ -268,20 +280,19 @@
 
 
 
-// //For Loops
-// for(var i = 1; i <= 100; i++) {
-// 	console.log(i);
-// }
+//For Loops
+for(var i = 1; i <= 100; i++) {
+	console.log(i);
+}
 
-// //with a Break
-// for(var i = 1; i <= 100; i++) {
-// 	console.log(i);
+//with a Break
+for(var i = 1; i <= 100; i++) {
+	console.log(i);
 
-// 	if (i == 50) {
-// 		break;
-// 	}
-
-// }
+	if (i == 50) {
+		break;
+	}
+}
 
 
 
@@ -358,68 +369,68 @@
 // 	list[2][2] = 10;
 // 	console.log(list);
 
-//Objects
-	var a = new Object();
-	var a = {};
+// //Objects
+// 	var a = new Object();
+// 	var a = {};
 
 
 
-	console.log(a);
+// 	console.log(a);
 
-	a.name = "Your Name";
-	a.age = 100;
-	a.city = "Santiago";
-	a.friends = ["A", "B", "C"];
-	a.someMethod = function(x, y) {
-		return x + y;
-	}
+// 	a.name = "Your Name";
+// 	a.age = 100;
+// 	a.city = "Santiago";
+// 	a.friends = ["A", "B", "C"];
+// 	a.someMethod = function(x, y) {
+// 		return x + y;
+// 	}
 
-	console.log(a);
+// 	console.log(a);
 
-	console.log(a.city);
-	console.log(a["city"]);
+// 	console.log(a.city);
+// 	console.log(a["city"]);
 
-	console.log(a.someMethod(1, 2));
+// 	console.log(a.someMethod(1, 2));
 
-//JSON
-	var user = {
-		name: "Peter",
-		score: 100,
-		country: "Chile",
-		pets: ["pet1", "pet2", "pet3"],
-		profile: {
-			type: "private",
-			account: "premium"
-		}
-	};
+// //JSON
+// 	var user = {
+// 		name: "Peter",
+// 		score: 100,
+// 		country: "Chile",
+// 		pets: ["pet1", "pet2", "pet3"],
+// 		profile: {
+// 			type: "private",
+// 			account: "premium"
+// 		}
+// 	};
 
-	console.log(user);
-	console.log(user.country);
-	console.log(user.pets[2]);
-	console.log(user.profile.account);
+// 	console.log(user);
+// 	console.log(user.country);
+// 	console.log(user.pets[2]);
+// 	console.log(user.profile.account);
 
-//Undefined
-	var user = {
-		name: "Peter",
-		score: 100,
-		country: "Chile",
-		pets: ["pet1", "pet2", "pet3"],
-		profile: {
-			type: "private",
-			account: "premium"
-		}
-	};
+// //Undefined
+// 	var user = {
+// 		name: "Peter",
+// 		score: 100,
+// 		country: "Chile",
+// 		pets: ["pet1", "pet2", "pet3"],
+// 		profile: {
+// 			type: "private",
+// 			account: "premium"
+// 		}
+// 	};
 
-	if ("profile" in user) {
-		console.log("the user has a profile")
-	}
+// 	if ("profile" in user) {
+// 		console.log("the user has a profile")
+// 	}
 
-	console.log(user.photo);
-	console.log(user["photo"]);
+// 	console.log(user.photo);
+// 	console.log(user["photo"]);
 
-	if (!user.photo) {
-		console.log("will you run");
-	}
+// 	if (!user.photo) {
+// 		console.log("photo is not present");
+// 	}
 
 
 
