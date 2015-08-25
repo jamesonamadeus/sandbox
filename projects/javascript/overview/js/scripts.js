@@ -302,33 +302,125 @@
 
 
 
-//Arrays - Push and Pop
-var list = [1,2,3, 44];
-	console.log(list);
+// //Arrays - Push and Pop
+// 	var list = [1,2,3, 44];
+// 	console.log(list);
 
-	list.push(1,2,"hello");
-	console.log(list);
+// 	list.push(1,2,"hello");
+// 	console.log(list);
 
-	list.pop();
-	list.pop();
-	list.pop();
-	console.log(list);
+// 	list.pop();
+// 	list.pop();
+// 	list.pop();
+// 	console.log(list);
 
-//Arrays - Splice
-var list = [1, 2, 3, 4, 5, 6];
-	console.log(list);
+// //Arrays - Splice
+// 	var list = [1, 2, 3, 4, 5, 6];
+// 	console.log(list);
 
-	list.splice(2, 0, 10, 20, 30);
-	console.log(list);
+// 	list.splice(2, 0, 10, 20, 30);
+// 	console.log(list);
 
-	list.splice(2, 3);
-	console.log(list);
+// 	list.splice(2, 3);
+// 	console.log(list);
 
-	list.splice(2, 3);
-	console.log(list);
+// 	list.splice(2, 3, 100, 200);
+// 	console.log(list);
 
-	list.splice(2, 3);
-	console.log(list);
+// 	list.splice(-2, 1);
+// 	console.log(list);
+
+// //Arrays - Iterate
+// 	var list = new Array(3, 4, 5, 6, 7, 8);
+
+// 	var i = 0, len = list.length;
+// 	while(i < len) {
+// 		list[i]++;
+// 		i++;
+// 	}
+
+// 	console.log(list);
+
+
+// 	for (i = 0; i < len; i ++){
+// 		list[i]++;
+// 	}
+// 	console.log(list);
+
+// //Multidimensional - Arrays
+// 	var list = [[1, 2, 3], [4, 4, 5], [7, 8, 9]];
+
+// 	console.log(list);
+
+// 	console.log(list[1][2]);
+// 	console.log(list[2][0]);
+
+// 	list[2][2] = 10;
+// 	console.log(list);
+
+//Objects
+	var a = new Object();
+	var a = {};
+
+
+
+	console.log(a);
+
+	a.name = "Your Name";
+	a.age = 100;
+	a.city = "Santiago";
+	a.friends = ["A", "B", "C"];
+	a.someMethod = function(x, y) {
+		return x + y;
+	}
+
+	console.log(a);
+
+	console.log(a.city);
+	console.log(a["city"]);
+
+	console.log(a.someMethod(1, 2));
+
+//JSON
+	var user = {
+		name: "Peter",
+		score: 100,
+		country: "Chile",
+		pets: ["pet1", "pet2", "pet3"],
+		profile: {
+			type: "private",
+			account: "premium"
+		}
+	};
+
+	console.log(user);
+	console.log(user.country);
+	console.log(user.pets[2]);
+	console.log(user.profile.account);
+
+//Undefined
+	var user = {
+		name: "Peter",
+		score: 100,
+		country: "Chile",
+		pets: ["pet1", "pet2", "pet3"],
+		profile: {
+			type: "private",
+			account: "premium"
+		}
+	};
+
+	if ("profile" in user) {
+		console.log("the user has a profile")
+	}
+
+	console.log(user.photo);
+	console.log(user["photo"]);
+
+	if (!user.photo) {
+		console.log("will you run");
+	}
+
 
 
 
