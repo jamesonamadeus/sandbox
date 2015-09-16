@@ -1,0 +1,7 @@
+body {
+	font-family: 'Open Sans', 'Merriwearther', sans-serif;
+}
+
+.sprite {
+	background: url("../assets/images/sprite.png") no-repeat;
+}
