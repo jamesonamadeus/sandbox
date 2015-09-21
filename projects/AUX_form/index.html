@@ -1,141 +1,181 @@
 <!doctype html>
 <html lang="en" class="no-js">
 
-<head>
-	<title>Woo Sign-Up</title>
+   <head>
+      <title>Woo Sign-Up</title>
 
-	<link rel="dns-prefetch" href="//ajax.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+      <link rel="dns-prefetch" href="//ajax.googleapis.com">
+      <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
-	<meta charset="UTF-8">
-	<meta http-equiv="cleartype" content="on">
-
-
-	<!-- Viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Google Font -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  	<!-- CSS Stylesheet -->
-  	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-</head>
-
-<body>
-	<div class="main">
-
-	<header>
-		<h1>Sign up for Whoo!</h1>
-		<h5>50 projects, 500 images, 10 videos, domain binding, and technical support</h5>
-	</header>
-
-	<form id="myform" action="" method="post">
+      <meta charset="UTF-8">
+      <meta http-equiv="cleartype" content="on">
 
 
-		<!-- Portfolio Info -->
+      <!-- Viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<fieldset>
-			<legend>1 First, name your portfolio</legend>
-			<div class="entryfield">
-				<p>
-		            <label for="portfolioName">Portfolio name</label>
-		            <br>
-		            <input type="text" id="portfolioName" name="portfolioName" aria-required="true" required>
-		        </p>
-		        <p>
-		            <label for="portfolioAddress">Portfolio address</label>
-		            <br>
-		            <input type="text" id="portfolioAddress" name="portfolioAddress" aria-describedby="domain" aria-required="true" required>
-		            <label for="portfolioAddress">.sample.com</label>
-		        </p>
+      <!-- Google Font -->
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-	        </div>
-		</fieldset>	
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
+   </head>
 
-		<!-- Account Details -->
+   <body>
+      <div class="main">
 
-		<fieldset>
-			<legend>2 Now, enter your account details</legend>
-			<div class="entryfield">
-				<p>
-		            <label for="name">Name</label>
-		             <br>
-		            <input type="text" id="name" name="name" aria-required="true" required>
-		        </p>
-		       	<p>
-		            <label for="email">Email</label>
-		             <br>
-		            <input type="text" id="email" name="email" aria-describedby="emailtext" aria-required="true" required>
-		            <br>
-		            <label for="email" id="emailtext">NOTE: We'll never share your email, promise.</label>
-		        </p>
-		        <p>
-		            <label for="password">Password</label>
-		             <br>
-		            <input type="password" id="password" name="password" aria-required="true" required>
-		        </p>
-		    </div>
-		</fieldset>
+         <header role="banner">
+         <h1>Sign up for Whoo!</h1>
+         <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+         </header>
+
+      <form id="myform" action="" method="post">
 
 
-		<!-- Payment Info -->
+      <!-- Portfolio Info -->
 
-		<fieldset>
-			<legend>3 Finally, enter your payment information</legend>
-			<div class="entryfield">
-				<p>
-		            <label for="cardNumber">Card Number</label>
-		            <br>
-		            <input type="text" pattern="[0-9]{13,16}" id="cardNumber" name="ccNumber" aria-required="true"  required>
-		        </p>
-		       	<p>
-		            <label for="securityCode">Security Code</label>
-		            <br>
-		            <input type="text" maxlength="4" id="securityCode" name="securityCode" aria-required="true" required>
-	        	</p>
-	        	<p>
-		        	<label for="expDate">Expiration date</label>
-		        	<br>
-					<select id="expMonth" name="expirationMonth" aria-required="true" required>
-							<option value="00">Month</option>
-							<option value="01">January</option>
-							<option value="02">February</option>
-							<option value="03">March</option>
-							<option value="04">April</option>
-							<option value="05">May</option>
-							<option value="06">June</option>
-							<option value="07">July</option>
-							<option value="08">August</option>
-							<option value="09">September</option>
-							<option value="10">October</option>
-							<option value="11">November</option>
-							<option value="12">December</option>
-					</select>
-					<select id="expYear" name="expirationYear" aria-required="true" required>
-						<option value="00">Year</option>
-						<option value="2015">2015</option>
-						<option value="2016">2016</option>
-						<option value="2017">2017</option>
-						<option value="2018">2018</option>
-						<option value="2019">2019</option>
-						<option value="2020">2020</option>
-						<option value="2021">2021</option>
-						<option value="2022">2022</option>
-						<option value="2023">2023</option>
-						<option value="2024">2024</option>
-					</select>
-				</p>
-        	</div>
-		</fieldset>	
+      <fieldset>
+         <legend>First, name your portfolio</legend>
 
-		<button type="submit">Create your portfolio</button>
+         <div class="entrycontainer">
+            <div class="entryfield">
+
+            <p>
+               <label for="portfolio_name">Portfolio name</label>
+               <input type="text" id="portfolio_Name" name="portfolioName" minlength="2" aria-required="true" required>
+            </p>
+            <p>
+               <label for="portfolio_address" class="port_address">Portfolio address</label>
+                  <input type="text" id="portfolio_address" name="portfolioAddress" aria-required="true" required>
+                  <label for="portfolioAddress" class="sample">.sample.com</label>
+            </p>
+
+            </div>
+         </div>
+      </fieldset>	
 
 
-	</form>
+      <!-- Account Details -->
 
-	</div>
+      <fieldset>
+         <legend>Now, enter your account details</legend>
 
-</body>
+         <div class="entrycontainer">
+            <div class="entryfield">
+            <div class="accounts">
+               <p>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" aria-required="true" required>
+               </p>
+               <p>
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" aria-describedby="emailtext" aria-required="true" required>
+                  <label for="email" id="emailtext">NOTE: We'll never share your email, promise.</label>
+               </p>
+               <p>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" aria-required="true" required>
+               </p>
+            </div>
+            </div>
+         </div>
+      </fieldset>
+
+
+      <!-- Payment Info -->
+
+      <fieldset>
+         <legend>Finally, enter your payment information</legend>
+
+         <div class="entrycontainer">
+            <div class="entryfield">
+         
+            <p>
+               <label for="card_number" >Card Number</label>
+
+               <input type="text" pattern="[0-9]{13,16}" id="card_number" name="cardNumber" aria-required="true"  required>
+            </p>
+            <p class="cctype">
+
+               <input type="radio" id="cc_amex" name="CCtype" value="AMEX" aria-required="true"  required>
+               <label for="cc_amex" class="ccamex">AMEX</label>
+
+               <input type="radio" id="cc_visa" name="CCtype" value="VISA" aria-required="true"  required>
+               <label for="cc_visa">VISA</label>
+
+               <input type="radio" id="cc_discover" name="CCtype" value="DISCOVER" aria-required="true"  required>
+               <label for="cc_discover">DISCOVER</label>
+
+               <input type="radio" id="cc_mastercard" name="CCtype" value="MASTERCARD" aria-required="true"  required>
+               <label for="cc_mastercard">MASTERCARD</label>
+
+            </p>
+            <p class="ccsecurity">
+               <label for="security_code">Security Code</label>
+               <input type="text" id="security_code" maxlength="4" minlength="3" name="securityCode" aria-required="true" required>
+               <label for="security_code" class="CVC">CVC</label>
+            </p>
+
+
+         <!-- Expiration Date -->
+
+         <legend id="expiration_date">Expiration date</legend>
+
+            <p class="exppicker">
+               <label for="exp_month" class="expiration_month">Month</label>
+
+                  <select id="exp_month" name="expirationMonth" aria-required="true" required>
+                     <option value="" selected="disabled">Month</option>
+                     <option value="01">January</option>
+                     <option value="02">February</option>
+                     <option value="03">March</option>
+                     <option value="04">April</option>
+                     <option value="05">May</option>
+                     <option value="06">June</option>
+                     <option value="07">July</option>
+                     <option value="08">August</option>
+                     <option value="09">September</option>
+                     <option value="10">October</option>
+                     <option value="11">November</option>
+                     <option value="12">December</option>
+                  </select>
+            </p>
+            <p class="exppicker">
+               <label for="exp_year" class="expiration_year">Year</label class="expirationYear">
+
+                  <select id="exp_year" name="expirationYear" aria-required="true" required>
+                     <option value="" selected="disabled">Year</option>
+                     <option value="2015">2015</option>
+                     <option value="2016">2016</option>
+                     <option value="2017">2017</option>
+                     <option value="2018">2018</option>
+                     <option value="2019">2019</option>
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                  </select>
+            </p>
+            </div>
+         </div>
+      </fieldset>	
+         <div class="button">
+
+            <button type="submit">Create your portfolio</button>
+
+         </div>
+
+      </form>
+      </div>
+
+      <!--Javascript-->
+      <script src="assets/js/vendor/jquery.min.js"></script>
+      <script src="assets/js/vendor/jquery.validate.min.js"></script>
+      <script src="assets/js/vendor/modernizr.min.js"></script>
+     <script src="assets/js/script.js"></script>
+
+   </body>
+
 </html>
