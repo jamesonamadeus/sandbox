@@ -1,0 +1,517 @@
+body {
+	-moz-background-size: cover;
+	-moz-transition:all .2s linear; 
+	-o-background-size: cover;
+	-o-transition:all .2s linear; 
+	-webkit-background-size: cover;
+	-webkit-transition:all .2s linear;
+	background-color: #b3e3ff;
+	background-size: cover;
+	counter-reset: fieldset;
+	font-family: 'Open Sans', 'Merriwearther', sans-serif;
+	transition:all .2s linear; 
+}
+
+
+/*Main Form*/
+.main {
+	background-color: #b3e3ff;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	padding: 8px 0px 20px 0px;
+}
+
+
+/*Header*/
+header {
+	-moz-border-radius-topleft: 9px;
+	-moz-border-radius-topright: 9px;
+	-webkit-border-top-left-radius: 9px;
+	-webkit-border-top-right-radius: 9px;
+	background-color: #125f77;
+	background: -moz-linear-gradient(#3c8ea6, #125f77);
+	background: -webkit-linear-gradient(#3c8ea6, #125f77);
+	background: linear-gradient(#3c8ea6, #125f77);
+	border-color: #125f77;
+	border-style: solid;
+	border-width: 1px;
+	padding: 26px 44px 0px 44px;
+	text-rendering: optimizeLegibility !important;
+}
+
+header h1 {
+	color: #fcfcfc;
+	font-family: "Merriweather";
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0px;
+	text-shadow: 1px 1px #125f77;	
+}
+
+header p {
+	color: #b1e3ff;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 700;
+	margin: -6px 0px 0px 0px;
+	padding-bottom: 16px;
+	text-shadow: 2px 2px #125f77;	
+}
+
+
+/*Form Legend & Counter*/
+legend {
+	color: #0a5e78;
+	font-family: "Merriweather";
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0px;
+	padding: 0px;
+	text-transform: none;
+}
+
+fieldset > legend:before{
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	background-color: #52a3d4;
+	border-color: #ffffff;
+	border: 7px solid;
+	color: #ffffff;
+	content: counter(fieldset);
+	counter-increment: fieldset;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	height: 30px;
+	line-height: 1.8;
+	margin-left: -66px;
+	margin-right: 23px;
+	text-align: center;
+	width: 30px;
+}
+
+
+/*Form Entry Containers*/
+#myform {
+	background-color: #ffffff;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	padding: 22px 24px 22px 24px;
+}
+
+fieldset {
+	border-width: 0px;
+	padding: 0px 20px 33px 20px;
+}
+
+.entrycontainer {
+	background-color: #f3f5f5;
+	border-radius: 10px;
+	padding: 22px 36px 30px 36px;
+}
+
+.entryfield {
+	padding: 8px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+label {
+	color: #424242;
+	cursor: default;
+	display: block;
+	font-family: "Open Sans";
+	font-size: 12px;
+	margin: 0px 0px 2px 0px;
+}
+
+input[type="text"] {
+	background: #ffffff;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
+	float: left;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 34px;
+	margin: 0px 0px 18px 0px;
+	padding-left: 8px;
+	width: 100%;
+}
+
+
+/*Portfolio Entryfield*/
+input#portfolio_address {
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	display: inline-block;
+	width: 63%;
+}
+
+label.sample {
+	background-color: #fafafa;
+	border-bottom-right-radius: 5px;
+	border-color: #cbcbcb;
+	border-left: 2px solid #ebebeb;
+	border-top-right-radius: 5px;
+	border-top-width: 1px;
+	border-top: 2px solid #CCCCCC;
+	color: #888888;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 0;
+	margin: 0px;
+	padding: 18px 22px 14px 0px;
+	text-align: center;
+	width: 30%;
+}
+
+
+/*Account Entryfield*/
+input[type="email"] {
+	background: #ffffff;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
+	float: left;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 34px;
+	margin: 0px 0px 6px 0px;
+	padding-left: 8px;
+	width: 100%;
+}
+
+label#emailtext {
+	color: #7b7b7b;
+	font-size: 11px;
+	font-weight: 600;
+	padding-bottom: 16px;
+}
+
+input[type="password"] {
+	background: #ffffff;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
+	float: left;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 34px;
+	padding-left: 8px;
+	width: 100%;
+}
+
+.accounts {
+	padding-bottom: 36px;
+}
+
+
+/*Payment Entryfield*/
+
+/*Credit Card Number & Types*/
+#card_number {
+	margin-bottom: 16px;
+	margin-top: 4px;
+	width: 53%;
+}
+
+label.cc_number {
+	margin: 0px;
+}
+
+p.cctype {
+	display: inline;
+	margin-left: 10px;
+}
+
+.cctype label {
+	cursor: pointer;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+input[type="radio"] {
+	left: -9999px;
+	position: absolute;
+}
+
+/*CC Styling*/
+/*AMEX*/
+input#cc_amex + label {
+	background: url('../images/sprite.png') no-repeat 0px -40px;
+	height: 33px;
+	width: 46px;
+}
+
+input#cc_amex:checked + label {
+	background: url('../images/sprite.png') no-repeat 0px 0px;
+	height: 33px;
+	width: 46px;
+}
+
+/*VISA*/
+input#cc_visa + label {
+	background: url('../images/sprite.png') no-repeat -48px -40px;
+	height: 33px;
+	width: 46px;
+}
+
+input#cc_visa:checked + label {
+	background: url('../images/sprite.png') no-repeat -48px 0;
+	height: 33px;
+	width: 46px;
+}
+
+/*DISCOVER*/
+input#cc_discover + label {
+	background: url('../images/sprite.png') no-repeat -96px -40px;
+	height: 33px;
+	width: 46px;
+}
+
+input#cc_discover:checked + label {
+	background: url('../images/sprite.png') no-repeat -96px 0px;
+	height: 33px;
+	width: 46px;
+}
+
+/*MASTERCARD*/
+input#cc_mastercard + label {
+	background: url('../images/sprite.png') no-repeat -144px -40px;
+	height: 33px;
+	width: 46px;
+}
+
+input#cc_mastercard:checked + label {
+	background: url('../images/sprite.png') no-repeat -144px 0;
+	height: 33px;
+	width: 46px;
+}
+
+/*Security Code*/
+.CVC {
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.ccsecurity {
+	float: left;
+	width: 100%;
+}
+
+input#security_code {
+	margin-top: 4px;
+	width: 18%;
+}
+
+label.CVC {
+	cursor: default;
+	margin-left: 10px;
+	background: url('../images/sprite.png') no-repeat 0 -124px;
+	height: 33px;
+	width: 62px;
+}
+
+label.CVC.amexside {
+	cursor: default;
+	margin-left: 10px;
+	background: url('../images/sprite.png') no-repeat 0 -81px;
+	height: 33px;
+	width: 70px;
+}
+
+/*Expiration Date*/
+#expiration_date {
+	color: #424242;
+	display: block;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+}
+
+#cc_expiration{
+	margin: 0px;
+	padding-bottom: 30px;
+}
+
+#exp_month,
+#exp_year {
+	background-color: #ffffff;
+	background: -moz-linear-gradient(#ffffff, #e9eded);
+	background: -webkit-linear-gradient(#ffffff, #e9eded);
+	background: linear-gradient(#ffffff, #e9eded);
+	border-radius: 5px;
+	border-top-width: 0px;
+	border: 1px solid #d5d7d7;
+	color: #424242;
+	display: inline;
+	font-size: 11px;
+	height: 24px;
+}
+
+p.exppicker_month {
+	float: left;
+	margin-top: -24px;
+	width: 25%;
+}
+
+p.exppicker_year {
+	float: left;
+	margin-left: 10px;
+	margin-top: -24px;
+	width: 14%;
+}
+
+.expiration_month, 
+.expiration_year {
+	visibility: hidden;
+}
+
+/*button*/
+.button{
+	text-align: center;
+}
+
+button {
+	background-color: #7b992b;
+	background: -moz-linear-gradient(#aabd62, #7b992b);
+	background: -webkit-linear-gradient(#aabd62, #7b992b);
+	background: linear-gradient(#aabd62, #7b992b);
+	border-radius: 5px;
+	border: 1px solid #7b992b;
+	color: #ffffff;
+	font-family: "merriweather";
+	font-size: 15px;
+	height: 38px;
+	line-height: 0;
+	text-align: center;
+	text-transform: none;
+	width: 220px;
+}
+
+/*Validation*/
+input:required:invalid {
+	background-image: url('../images/invalid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+input:required:valid {
+	background-image: url('../images/valid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+/*CSS Media Queries*/
+@media only screen and (max-width: 640px) {
+
+	.main {
+	max-width: 540px;
+	}
+
+	input#portfolio_address {
+		width: 50%;
+	}
+
+	label.sample {
+		padding-right: 10px;
+		width: 44%;
+	}
+
+	#card_number {
+		width: 46%;
+	}
+
+	input#security_code {
+		width: 32%;
+	}
+
+	p.exppicker_month {
+		width: 36%;
+	}
+
+	p.exppicker_year {
+		width: 25%;
+	}
+}
+
+ @media only screen and (max-width: 540px) {
+ 	.main {
+		max-width: 480px;
+	}
+
+	#card_number {
+		margin-bottom: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	p.cctype {
+		margin-left: 0px;
+		padding-bottom: 20px;
+	}
+
+	.ccsecurity {
+		margin-top: 10px;
+	}
+
+
+}
+
+ @media only screen and (max-width: 400px) {
+ 	.main {
+	max-width: 310px;
+	}
+
+	input#portfolio_address {
+		width: 60%;
+	}
+	#myform {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.entrycontainer {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	label.sample {
+		font-size: 10px;
+		padding-right: 4px;
+		width: 36%;
+	}
+
+	input#security_code {
+		width: 40%;
+	}
+
+	p.exppicker_month {
+		width: 50%;
+	}
+
+	p.exppicker_year {
+		width: 40%;
+	}
+
+	fieldset > legend:before{
+	margin-left: -51px;
+	margin-right: 8px;
+	}
+}

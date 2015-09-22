@@ -1,0 +1,22 @@
+/********************************************************************
+*
+*   Base Style Framework:
+*     github.com/freshtilledsoil/base-style-framework
+*     Version 1.0.1
+*     Last Updated: 03.18.2015
+*
+*     Beyond Normalization, a base set of markup styling and
+*     patterns to provide an easily configurable head-start
+*     to any web project.
+*
+*   License:
+*     The MIT License (MIT)
+*
+********************************************************************/
+
+@import
+        'config/__import',
+        'base/__import',
+        'layout/__import',
+        'modules/__import',
+        'vendor/__import';
