@@ -1,127 +1,65 @@
-// /*jQuery Credit Card Validator*/
-// $(function() {
-// 	$('#card_number').validateCreditCard(function(result) {
-// 	if(result.card_type == null)
-// 	{
-// 	$('#card_number').removeClass();
-// 	}
-// 	else
-// 	{
-// 	$('#card_number').addClass(result.card_type.name);
-// 	}
+//Create a function for the checked radio buttons
+$.fn.checked = function(value){
+        if (value === true || value === false){
 
-// 	if(!result.valid)
-// 	{
-// 	$('#card_number').removeClass("valid");
-// 	}
-// 	else
-// 	{
-// 	$('#card_number').addClass("valid");
-// 	}
-// 	});
-// });
+            $(this).each(function(){
 
-// function getCreditCardType(card_number)
-// {
+                this.checked = value; 
 
-//   //start without knowing the credit card type
-//   var result = "unknown";
+            });
+        }
+    };
 
-//   //first check for MasterCard
-//   if (/^5[1-5]/.test(card_number))
-//   {
-//     document.getElementById("cc_mastercard").checked = true;
-//   }
+//Retrieve CC Type from Card Number Input   
+function getCCType(){
+    $('#card_number').keyup(function(){
+        var card = $(this).val();
+        var card_number = (card).slice(0,1);
 
-//   //then check for Visa
-//   else if (/^4[0-9]/.test(card_number))
-//   {
-//     document.getElementById("cc_visa").checked = true;
-//   }
+        console.log(card_number);
 
-//   //then check for AMEX
-//   else if (/^3[47]/.test(card_number))
-//   {
-//     document.getElementById("cc_amex").checked = true;
-//   }
+        if (card_number === '3'){
 
-//   //then check for DISCOVER
-//   else if (/^6[0-9]/.test(card_number))
-//   {
-//     document.getElementById("cc_discover").checked = true;
-//   }
+            $('input#cc_amex').checked(true);
+            $('.CVC').addClass('amexside');
+        } 
+        else if (card_number === '4'){
 
-//   return result;
-// }
+            $('input#cc_visa').checked(true);
+            $('.CVC').removeClass('amexside');
+        } 
+        else if (card_number === '5'){
+
+            $('input#cc_mastercard').checked(true);
+            $('.CVC').removeClass('amexside')
+        } 
+        else if (card_number === '6'){
+
+            $('input#cc_discover').checked(true);
+            $('.CVC').removeClass('amexside');
+        }
+    });
+};
 
 
-// function handleEvent(event)
-// {
-//   var value   = event.target.value,    
-//       type    = getCreditCardType(value);
+getCCType();
 
-//   switch (type)
-//   {
-//     case "cc_mastercard":
-//         //show MasterCard icon
-//         break;
+//Switch the Icon for the CVC to Amex
+$('input#cc_amex').change(function(){
+    if ($(this).prop('checked')){
 
-//     case "cc_visa":
-//         //show Visa icon
-//         break;
+        CVC.addClass('amexside'); 
 
-//     case "cc_amex":
-//         //show American Express icon
-//         break;
+    } else{
 
-//     case "cc_discover":
-//         //show American Express icon
-//         break;
+        CVC.removeClass('amexside')
+    }
+});
 
-//     default:
-//         //clear all icons?
-//         //show error?
-//   }
-// }
-
-// // or window.onload
-// document.addEventListener("DOMContentLoaded", function(){
-//   var textbox = document.getElementById("card_number");
-//   textbox.addEventListener("keyup", handleEvent, false);
-//   textbox.addEventListener("blur", handleEvent, false);
-// }, false);
+//jquery.validate plugin
+$("#myform").validate();
 
 
-// function CVCchange() {
-// 			if (cc_amex.is(":checked")) {
-// 				CVC.addClass("amexside");
-// 			} 
-// 			else {
-// 				CVC.removeClass("amexside");
-// 			}
-// 		};
 
-function GetCardType(card_number)
-{
-    // visa
-    var re = new RegExp("^4");
-    if (number.match(re) != null)
-        document.getElementById("cc_visa").checked; 
 
-    // Mastercard
-    re = new RegExp("^5[1-5]");
-    if (number.match(re) != null)
-        document.getElementById("cc_visa").checked;
-
-    // AMEX
-    re = new RegExp("^3[47]");
-    if (number.match(re) != null)
-        document.getElementById("cc_visa").checked;
-
-    // Discover
-    re = new RegExp("^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)");
-    if (number.match(re) != null)
-        document.getElementById("cc_visa").checked;
-
-    document.getElementById();
-}
+            
