@@ -19,23 +19,30 @@
       <link rel="shortcut icon" type="image/png" href="http://jamesonamadeus.com/projects/AUX_form/build/assets/images/favicon.png"/>
 
       <!--JS For Font-->
-      <script type="text/javascript">
+      <script>
+
+      // remove no-js and add js to the HTML
+      document.documentElement.className = document.documentElement.className.replace('no-js', " ");
+      document.documentElement.className += ' js ';
+
       WebFontConfig = {
-      google: { families: [ 'Open+Sans:400,400italic,600,600italic,700,700italic:latin', 'Merriweather:400,400italic,700,700italic:latin' ] }
+       google: { families: [ 'Open+Sans:400,400italic,600,600italic,700,700italic:latin', 'Merriweather:400,400italic,700,700italic:latin' ] }
       };
 
       (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-      })(); </script>
+       var wf = document.createElement('script');
+       wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+       wf.type = 'text/javascript';
+       wf.async = 'true';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(wf, s);
+      })();
+      </script>
 
-      <!-- Google Font -->
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+      <noscript>
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Merriweather:400,400italic,700,700italic" rel="stylesheet">
+      </noscript>
 
       <!-- FTS Manisfest Normalizer -->
       <link rel="stylesheet" type="text/css" href="assets/css/manisfest.css">
