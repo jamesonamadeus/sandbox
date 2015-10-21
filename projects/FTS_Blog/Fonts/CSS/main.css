@@ -1,7 +1,65 @@
 .hipster1{
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.hipster1-1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 
-.hipster2 {
-	font-family: 'Lato', sans-serif;
+.hipster1-2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.hipster1-3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.hipster2{
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+.hipster2-1{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+}
+
+.hipster2-2{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+
+.hipster2-3{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.hipster3{
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.OpenSans {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+}
+
+.Merriweather {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 32px;
+}
+
+.Fredericka {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 32px;
+}
+
+
+div {
+	padding-bottom: 28px;
 }
