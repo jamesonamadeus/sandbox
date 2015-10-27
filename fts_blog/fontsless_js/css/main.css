@@ -1,0 +1,33 @@
+.hipster1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.hipster1-1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.hipster2{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+}
+
+.hipster2-1{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+
+.OpenSans {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+}
+
+.Merriweather {
+	font-family: 'Merriweather', serif;
+	font-size: 32px;
+}
+
+div {
+	padding-bottom: 28px;
+}
