@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+</head>
+<body>
+
+<a-scene>
+
+  <!--Cursor-->
+  <a-entity position="0 1.8 4">
+    <a-camera id="camera">
+      <a-cursor color="#4CC3D9"></a-cursor>
+    </a-camera>
+  </a-entity>
+  <!--/Cursor-->
+
+
+  <!--1st Column On Far Left-->
+  <a-cube position="-1.35 0.5 -.08" rotation="0 45 0" width="1" height="1" depth="1" color="#FFFFFF">
+  </a-cube>
+  <a-cube position="-1.35 1.5 -.08" rotation="0 45 0" width="1" height="1" depth="1" color="#e74c3c">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <a-cube position="-1.35 2.5 -.08" rotation="0 45 0" width="1" height="1" depth="1" color="#e67e22">
+  </a-cube>
+  <!--/1st Column On Far Left-->
+
+  <!--2nd Column From Left-->
+  <a-cube position="-.632 0.5 .64" rotation="0 45 0" width="1" height="1" depth="1" color="#27ae60">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <a-cube position="-.632 1.5 .64" rotation="0 45 0" width="1" height="1" depth="1" color="#e67e22">
+  </a-cube>
+  <a-cube position="-.632 2.5 .64" rotation="0 45 0" width="1" height="1" depth="1" color="#3498db">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <!--/2nd Column From Left-->
+
+  <!--Center Column-->
+  <a-cube position=".07 0.5 1.3439" rotation="0 45 0" width="1" height="1" depth="1" color="#e74c3c">
+  </a-cube>
+  <a-cube position=".07 1.5 1.3439" rotation="0 45 0" width="1" height="1" depth="1" color="#27ae60">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <a-cube position=".07 2.5 1.3439" rotation="0 45 0" width="1" height="1" depth="1" color="#f1c40f">
+  </a-cube>
+  <!--/Center Column-->
+
+  <!--2nd Column From Right-->
+  <a-cube position=".78 0.5 .629" rotation="0 45 0" width="1" height="1" depth="1" color="#3498db">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <a-cube position=".78 1.5 .629" rotation="0 45 0" width="1" height="1" depth="1" color="#e67e22">
+  </a-cube>
+  <a-cube position=".78 2.5 .629" rotation="0 45 0" width="1" height="1" depth="1" color="#FFFFFF">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <!--/2nd Column From Right-->
+
+  <!--Column on Far Right-->
+  <a-cube position="1.49 0.5 -.085" rotation="0 45 0" width="1" height="1" depth="1" color="#27ae60">
+  </a-cube>
+  <a-cube position="1.49 1.5 -.085" rotation="0 45 0" width="1" height="1" depth="1" color="#3498db">
+    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+  </a-cube>
+  <a-cube position="1.49 2.5 -.085" rotation="0 45 0" width="1" height="1" depth="1" color="#f1c40f">
+  </a-cube>
+  <!--/Column on Far Right-->
+
+  <a-sky color="#ecf0f1"></a-sky>
+</a-scene>
+
+</body>
+</html>
